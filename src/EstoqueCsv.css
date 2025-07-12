@@ -1,0 +1,36 @@
+.estoque-container {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tabela-wrapper {
+  overflow-x: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.tabela-estoque {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1000px;
+}
+
+.tabela-estoque th, .tabela-estoque td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  word-break: break-word;
+}
+
+.tabela-estoque th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.tabela-estoque tr:nth-child(even) {
+  background-color: #fafafa;
+}
