@@ -1,36 +1,40 @@
 .estoque-container {
   padding: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow-x: auto;
 }
 
-.tabela-wrapper {
-  overflow-x: auto;
+.tabela-container {
+  max-height: 600px;
+  overflow: auto;
   border: 1px solid #ccc;
-  border-radius: 8px;
 }
 
 .tabela-estoque {
-  width: 100%;
   border-collapse: collapse;
+  width: 100%;
   min-width: 1000px;
+  table-layout: fixed;
 }
 
-.tabela-estoque th, .tabela-estoque td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: left;
-  vertical-align: top;
-  word-break: break-word;
-}
-
-.tabela-estoque th {
-  background-color: #f2f2f2;
-  font-weight: bold;
+.tabela-estoque thead {
   position: sticky;
   top: 0;
+  background-color: #f0f0f0;
   z-index: 1;
 }
 
-.tabela-estoque tr:nth-child(even) {
-  background-color: #fafafa;
+.tabela-estoque th,
+.tabela-estoque td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tabela-estoque td:hover {
+  background-color: #f9f9f9;
 }
